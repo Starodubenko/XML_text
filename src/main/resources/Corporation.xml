@@ -1,30 +1,34 @@
 <?xml version="1.0"?>
         <Corporation xmlns="http://www.example.com/corporation"
                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                    xsi:schemaLocation="http://www.example.com/corporation corporation.xsd">
+                    xsi:schemaLocation="http://www.example.com/corporation Corporation.xsd">
     <employees>
-        <employee>
-            <surname>qwerty</surname>
-            <firstname>qwerty</firstname>
-            <lastname>qwerty</lastname>
+        <employee id="011">
+            <fullName>
+                <surname>Kanatov</surname>
+                <firstname>Talgat</firstname>
+                <middlename>Zhaksiadamov</middlename>
+            </fullName>
             <address>
                 <city>Karaganda</city>
-                <street>Bukhar-Zhirau</street>
-                <build>12</build>
-                <apartment>12</apartment>
+                <street>Bulvar-Mira</street>
+                <build>28</build>
+                <apartment>28</apartment>
             </address>
-            <telephone>58-96-65</telephone>
-            <mobilePhone>8-700-258-96-85</mobilePhone>
-            <identityCard>123456789</identityCard>
+            <telephone>555-66-11</telephone>
+            <mobilePhone>8-777-555-66-11</mobilePhone>
+            <identityCard>12345678</identityCard>
             <function>Director</function>
         </employee>
     </employees>
 
    <clients>
     <client id="001">
-        <surname>Ivanov</surname>
-        <firstname>Ivan</firstname>
-        <lastname>Ivanovich</lastname>
+        <fullName>
+            <surname>Ivanov</surname>
+            <firstname>Ivan</firstname>
+            <middlename>Ivanovich</middlename>
+        </fullName>
         <address>
             <city>Karaganda</city>
             <street>Stepnoy-3</street>
@@ -42,9 +46,11 @@
     </client>
 
     <client id="002">
-        <surname>Petrov</surname>
-        <firstname>Petr</firstname>
-        <lastname>Petrovich</lastname>
+        <fullName>
+            <surname>Petrov</surname>
+            <firstname>Petr</firstname>
+            <middlename>Petrovich</middlename>
+        </fullName>
         <address>
             <city>Karaganda</city>
             <street>Stepnoy-3</street>
@@ -61,9 +67,11 @@
     </client>
 
     <client id="003">
-        <surname>Sidorov</surname>
-        <firstname>Fedor</firstname>
-        <lastname>Ivanovich</lastname>
+        <fullName>
+            <surname>Sidorov</surname>
+            <firstname>Fedor</firstname>
+            <middlename>Ivanovich</middlename>
+        </fullName>
         <address>
             <city>Karaganda</city>
             <street>Stepnoy-3</street>
@@ -80,9 +88,11 @@
     </client>
 
         <client id="004">
-            <surname>Sholohov</surname>
-            <firstname>Vladimir</firstname>
-            <lastname>Vladimirovich</lastname>
+            <fullName>
+                <surname>Sholohov</surname>
+                <firstname>Vladimir</firstname>
+                <middlename>Vladimirovich</middlename>
+            </fullName>
             <address>
                 <city>Karaganda</city>
                 <street>Stepnoy-3</street>
@@ -99,9 +109,11 @@
         </client>
 
         <client id="005">
-            <surname>Zhidov</surname>
-            <firstname>Artur</firstname>
-            <lastname>Abramovich</lastname>
+            <fullName>
+                <surname>Zhidov</surname>
+                <firstname>Artur</firstname>
+                <middlename>Abramovich</middlename>
+            </fullName>
             <address>
                 <city>Karaganda</city>
                 <street>Stepnoy-3</street>

@@ -6,18 +6,17 @@
     <xsd:include schemaLocation="MobilePhoneType.xsd" />
     <xsd:include schemaLocation="IdCardType.xsd"/>
     <xsd:include schemaLocation="EmployeeFunctionType.xsd"/>
+    <xsd:include schemaLocation="FullName.xsd"/>
 
     <xsd:complexType name="EmployeeType">
         <xsd:sequence>
-            <xsd:element name="surname" type="xsd:string"/>
-            <xsd:element name="firstname" type="xsd:string"/>
-            <xsd:element name="lastname" type="xsd:string"/>
+            <xsd:element name="fullName" type="FullName"/>
             <xsd:element name="address" type="AddressType"/>
             <xsd:element name="telephone" type="TelephoneType"/>
             <xsd:element name="mobilePhone" type="MobilePhoneType"/>
             <xsd:element name="identityCard" type="IdCardType"/>
             <xsd:element name="function" type="EmployeeFunctionType"/>
         </xsd:sequence>
+        <xsd:attribute name="id" type="xsd:int" use="required"/>
     </xsd:complexType>
-
 </xsd:schema>

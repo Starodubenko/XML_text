@@ -6,12 +6,11 @@
     <xsd:include schemaLocation="TelephoneType.xsd"/>
     <xsd:include schemaLocation="MobilePhoneType.xsd"/>
     <xsd:include schemaLocation="EmailType.xsd"/>
+    <xsd:include schemaLocation="FullName.xsd"/>
 
     <xsd:complexType name="ClientType">
         <xsd:sequence>
-            <xsd:element name="surname" type="xsd:string"/>
-            <xsd:element name="firstname" type="xsd:string"/>
-            <xsd:element name="lastname" type="xsd:string"/>
+            <xsd:element name="fullName" type="FullName"/>
             <xsd:element name="address" type="AddressType"/>
             <xsd:element name="order" type="OrderType"/>
             <xsd:element name="telephone" type="TelephoneType"/>
